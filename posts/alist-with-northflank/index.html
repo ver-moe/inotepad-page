@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/favicon.ico">
+  
+  <title>在northflank上部署Alist | 某人的记事板</title>
+  
+  <meta name="author" content="" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="alist, onedrive, 教程" />
+  
+  <meta name="description" content="本教程使用版本:v3.2.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在northflank上部署Alist">
+<meta property="og:url" content="https://blog.ver.moe/posts/alist-with-northflank/">
+<meta property="og:site_name" content="某人的记事板">
+<meta property="og:description" content="本教程使用版本:v3.2.0">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.ver.moe/images/favicon.ico">
+<meta property="article:published_time" content="2023-01-21T01:56:26.000Z">
+<meta property="article:modified_time" content="2023-11-26T10:56:42.000Z">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="alist">
+<meta property="article:tag" content="onedrive">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.ver.moe/images/favicon.ico">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="animate-css" href="/css/animate.min.css" media="all"></script>
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  <link rel="stylesheet" id="kratos-B-css" href="/css/kr-B-custom.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+    <script defer src="/js/instantpage.min.js"></script>
+  
+    <script defer src="/js/kr-B.min.js"></script>
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner-B.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg-B.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>Archives</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-download"></i>Netdisk</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://file.ver.moe"><i class="fa fa-check"></i>netdisk-1</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-cogs"></i>Backend</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://blog-qexo.ver.moe"><i class="fa fa-user-circle-o"></i>Qexo</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://blog-waline.ver.moe/ui"><i class="fa fa-commenting-o"></i>Waline</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://img.ver.moe"><i class="fa fa-picture-o"></i>Picx</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-paw"></i>Friends</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/about/"><i class="fa fa-user"></i>About me</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-link"></i>Others</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://candinya.com"><i class="fa fa-user-circle-o"></i>伟大的candinya</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-github"></i>可爱的Kratos Rebirth</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a href="/bullshit/"><i class="fa fa-thumbs-down"></i>神秘之域</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">某人的记事板</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>某人的记事板</h2> <br />
+                        <span>-用来堆垃圾-</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="preview-overlay">
+            <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+              </defs>
+              <g class="preview-parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--gentle-wave1)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--gentle-wave2)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--gentle-wave3)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--gentle-wave)"></use>
+              </g>
+            </svg>
+        </div>
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+                        
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix animate__animated animate__fadeIn">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar2.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">本博客属于一位没钱没权没势每天腺苷三磷酸超负荷工作但是热爱计算⑨+⑨并被誉为白嫖老干部的苦逼学生党外加车车人</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                23
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                6
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                24
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8Cnorthflank"><span class="toc-text">注册northflank</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">配置数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2Alist%E6%9C%AC%E4%BD%93"><span class="toc-text">部署Alist本体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="toc-text">绑定域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CDN"><span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0"><span class="toc-text">更新</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%8A%A5%E9%94%99%EF%BC%9F"><span class="toc-text">更新报错？</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix animate__animated animate__fadeIn">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E7%82%B9%E6%95%B0%E5%AD%A6/">写点数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/">来点教程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%99%BD%E5%AB%96%E4%B8%96%E7%95%8C/">白嫖世界</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%99%BD%E8%89%B2%E9%AD%94%E6%B3%95/">白色魔法</a><span class="category-list-count">2</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix animate__animated animate__fadeIn">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/TLMC/" style="font-size: 0.6em;">TLMC</a> <a href="/tags/Touhou-lossless-music-collection/" style="font-size: 0.6em;">Touhou lossless music collection</a> <a href="/tags/alist/" style="font-size: 0.67em;">alist</a> <a href="/tags/blog/" style="font-size: 0.8em;">blog</a> <a href="/tags/cloudflare-R2/" style="font-size: 0.6em;">cloudflare R2</a> <a href="/tags/hexo/" style="font-size: 0.73em;">hexo</a> <a href="/tags/hexo/" style="font-size: 0.6em;">hexo++</a> <a href="/tags/icp%E5%A4%87%E6%A1%88/" style="font-size: 0.6em;">icp备案</a> <a href="/tags/onedrive/" style="font-size: 0.67em;">onedrive</a> <a href="/tags/onemanager/" style="font-size: 0.6em;">onemanager</a> <a href="/tags/proxy/" style="font-size: 0.6em;">proxy</a> <a href="/tags/qexo/" style="font-size: 0.6em;">qexo</a> <a href="/tags/theme/" style="font-size: 0.6em;">theme</a> <a href="/tags/vpn/" style="font-size: 0.6em;">vpn</a> <a href="/tags/wexagonal/" style="font-size: 0.6em;">wexagonal</a> <a href="/tags/%E4%B8%9C%E6%96%B9Project/" style="font-size: 0.6em;">东方Project</a> <a href="/tags/%E4%B8%9C%E6%96%B9project/" style="font-size: 0.6em;">东方project</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 0.6em;">图床</a>
+      </div>
+  </aside>
+
+            
+    </div>
+</section>
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article class="animate__animated animate__fadeIn" itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://blog.ver.moe/posts/alist-with-northflank/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">在northflank上部署Alist</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2023-01-21T01:56:26.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-01-21</time></li>
+                <li><time datetime="2023-11-26T10:56:42.000Z" itemprop="dateModified">最后编辑：2023-11-26</time></li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            1296
+                        
+                        字
+                    </li>
+                
+                
+                    
+                        <li>
+                            <i class="fa fa-eye"></i>
+                            <span data-path="/posts/alist-with-northflank/" class="waline-pageview-count"> </span> 次阅读
+                        </li>
+                    
+                    
+                        <li>
+                            <i class="fa fa-commenting-o"></i>
+                            <span data-path="/posts/alist-with-northflank/" class="waline-comment-count"> </span> 条评论
+                        </li>
+                    
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1700996202000"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8Cnorthflank"><span class="toc-number">1.</span> <span class="toc-text">注册northflank</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">2.</span> <span class="toc-text">配置数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2Alist%E6%9C%AC%E4%BD%93"><span class="toc-number">3.</span> <span class="toc-text">部署Alist本体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">4.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="toc-number">4.1.</span> <span class="toc-text">绑定域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CDN"><span class="toc-number">4.2.</span> <span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0"><span class="toc-number">4.3.</span> <span class="toc-text">更新</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%8A%A5%E9%94%99%EF%BC%9F"><span class="toc-number">4.3.1.</span> <span class="toc-text">更新报错？</span></a></li></ol></li></ol></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><p>本教程使用版本:<code>v3.2.0</code></p>
+<span id="more"></span>
+
+<p><a target="_blank" rel="noopener" href="https://blog.scyrinca.top/tool/onedrive-list/">上一次</a>简单教了一下alist部署于replit。</p>
+<p>不过文章有点老了，alist也迭代至v3了，所以就搞了这个新教程。</p>
+<h2 id="注册northflank"><a href="#注册northflank" class="headerlink" title="注册northflank"></a>注册northflank</h2><p>要绑卡，不扣款，这一步自己想办法<br>注册后会要求创建一个<code>project</code>, 起一个好听的名字吧</p>
+<h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>northflank自带数据库</p>
+<ul>
+<li>点击<code>Create new</code>按钮，创建一个<code>Addon</code><br><img src="https://s2.loli.net/2022/10/22/5QJzqYSrnL9HbvM.png"></li>
+<li>类型选<code>mysql</code></li>
+<li>勾上<code>Deploy with TLS</code>和<code>Publicly accessible</code></li>
+<li>创建后在Connection details里可以看见数据库信息- 复制<code>EXTERNAL_CONNECT_COMMAND</code>项，可以看到如下内容</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mysql </span><br><span class="line">--host=primary.sql--xxxxxx.addon.code.run </span><br><span class="line">--user=d8bd9788xxxxxxxx </span><br><span class="line">--password=5d736907f55d31bxxxxd9325xxxxx875 83833xxxxxcb //83833xxxxxcb是Database name</span><br><span class="line">--port 57373</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署Alist本体"><a href="#部署Alist本体" class="headerlink" title="部署Alist本体"></a>部署Alist本体</h2><p><img src="https://s2.loli.net/2022/10/22/tgKNMsAv8HDLIqf.png"></p>
+<ul>
+<li>选择<code>Deploy a Docker image</code></li>
+<li>选择<code>External image</code> 填上<code>xhofe/alist:v3.2.0</code></li>
+<li><code>Networking</code>一项<code>Port</code>填<code>5244</code>, <code>Protocol</code>选<code>HTTP</code>, 勾上<code>Publicly expose this port to the internet</code>，你会得到一个公开域名，长得像<code>p01--drive--xxxxxxxxx.code.run</code></li>
+</ul>
+<p><img src="https://s2.loli.net/2023/11/03/bAPUrolgyzSCudf.png"></p>
+<ul>
+<li>环境变量如图填写</li>
+<li>便捷复制<code>Port</code> <code>DB_HOST</code> <code>DB_PORT</code> <code>DB_USER</code> <code>DB_PASS</code> <code>DB_NAME</code> <code>DB_TABLE_PREFIX</code> <code>DB_TYPE</code> <code>DB_SSL_MODE</code> <code>CACHE_EXPIRATION</code> <code>CLEANUP_INTERVAL</code></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/22/tEPKBFshCnJj8vq.png"></p>
+<ul>
+<li>然后在Containers中可以可以看见日志，出现<code>stderr F INFO[2022-10-22 11:55:32] start server @ 0.0.0.0:5244</code>就代表部署成功，下方包含初始密码(注意不要复制多一个空格)</li>
+<li>Shell 里输<code>./alist admin</code>出来的信息是错的</li>
+</ul>
+<p>然后进入公开域名<code>p01--drive--xxxxxxxxx.code.run</code>, 大功告成</p>
+<p>本站的实例：<a target="_blank" rel="noopener" href="https://file.ver.moe/">https://file.ver.moe/</a></p>
+<p><img src="https://s2.loli.net/2022/10/22/zKZavbh7R3qs1D5.png"></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p><code>Services</code>内的<code>Ports &amp; DNS</code> 处</p>
+<h3 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h3><p>如果想给静态资源使用CDN，请加上环境变量</p>
+<p><code>CDN -&gt; https://cdn.jsdelivr.net/npm/alist-web@$version/dist</code></p>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><code>Services</code> 内 <code>Overview</code> 处点击 <code>Edit deployment</code>, 然后修改版本，目前<code>v3.28.0</code>确定可用</p>
+<h4 id="更新报错？"><a href="#更新报错？" class="headerlink" title="更新报错？"></a>更新报错？</h4><p>若日志出现<code>failed migrate database: Error 1170</code><br>请根据<a target="_blank" rel="noopener" href="https://github.com/alist-org/alist/issues/2846#issuecomment-1368141076">此</a>在数据库内删除 <code>x_search_nodes</code> 数据表并重启</p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://blog.ver.moe/posts/alist-with-northflank/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://blog.ver.moe/posts/alist-with-northflank/";
+            const title         = "「在northflank上部署Alist」";
+            const excerpt       = `本教程使用版本:v3.2.0`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/alist/" rel="tag">alist</a>, <a class="tag-none-link" href="/tags/onedrive/" rel="tag">onedrive</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2023-11-26T10:56:42.000Z" itemprop="dateModified">最后编辑：2023-11-26</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Wexagonal!!" href="/posts/Hexo-but-with-Wexagonal/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" Hexo + Qexo = ?" href="/posts/hexo-but-with-qexo/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <div id="w-comments" class="post-comments"></div>
+<link rel="stylesheet" href="/vendors/@waline/client@3.1.3/dist/waline.css" />
+<script>
+    var load_comm = () => {
+        const init = () => {
+            Waline.init(Object.assign({
+                el: '#w-comments',
+                path: '/posts/alist-with-northflank/',
+                dark: 'html[data-theme="dark"]',
+            }, JSON.parse('{"serverURL":"https://blog-waline.ver.moe/","lang":"zh","comment":true,"pageview":true,"visitor":true}')));
+        }
+        if (typeof Waline === 'undefined') {
+            const src = '/vendors/@waline/client@3.1.3/dist/waline.js';
+            import(src).then(module => {
+                    Waline = module;
+                    init();
+                }).catch(error => {
+                    console.error('Error loading Waline', error);
+                });
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://waline.js.org/">comments powered by Waline.</a></noscript>
+
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        <li><a href="mailto:yuriwasaikou@gmial.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/ver-moe"><i class="fa fa-github"></i></a></li>
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 某人的记事板 版权所有.</li>
+                            <li>本站已苟活<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by .</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a></li>
+                        </div>
+                        <div>
+                            <li><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank"><li><a href="https://icp.gov.moe/?keyword=20226222" target="_blank">萌ICP备20226222号</a></li><br> 
+ <li>站点访问量: <span id="qexo-site-pv">Loading...</span>, 
+ 站点访客数: <span id="qexo-site-uv">Loading...</span>, 
+ 页面访问量: <span id="qexo-page-pv">Loading...</span></li><br> 
+ <li>ip地址: <span id="ip">Loading...</span>, 
+ cdn节点: <span id="cdn">Loading...</span>, 
+ ip归属地: <span id="loc">Loading...</span></li> 
+ <script src="https://cdn.jsdelivr.net/npm/qexo-static@2.3.1/hexo/statistic/statistic.js"></script> 
+ <script> 
+ loadStatistic("https://blog-qexo.ver.moe"); 
+ window.addEventListener('pjax:complete', function() { 
+ loadStatistic("https://blog-qexo.ver.moe"); 
+ }); 
+ getCDNinfo = function() { 
+ $.ajax({ 
+ url: "https://blog.ver.moe/cdn-cgi/trace", 
+ success: function(data, status) { 
+ let areas = "Antananarivo, Madagascar - (TNR);Cape Town, South Africa - (CPT);Casablanca, Morocco - (CMN);Dar Es Salaam, Tanzania - (DAR);Djibouti City, Djibouti - (JIB);Durban, South Africa - (DUR);Johannesburg, South Africa - (JNB);Kigali, Rwanda - (KGL);Lagos, Nigeria - (LOS);Luanda, Angola - (LAD);Maputo, MZ - (MPM);Mombasa, Kenya - (MBA);Port Louis, Mauritius - (MRU);Réunion, France - (RUN);Bangalore, India - (BLR);Bangkok, Thailand - (BKK);Bandar Seri Begawan, Brunei - (BWN);Cebu, Philippines - (CEB);Chengdu, China - (CTU);Chennai, India - (MAA);Chittagong, Bangladesh - (CGP);Chongqing, China - (CKG);Colombo, Sri Lanka - (CMB);Dhaka, Bangladesh - (DAC);Dongguan, China - (SZX);Foshan, China - (FUO);Fuzhou, China - (FOC);Guangzhou, China - (CAN);Hangzhou, China - (HGH);Hanoi, Vietnam - (HAN);Hengyang, China - (HNY);Ho Chi Minh City, Vietnam - (SGN);Hong Kong - (HKG);Hyderabad, India - (HYD);Islamabad, Pakistan - (ISB);Jakarta, Indonesia - (CGK);Jinan, China - (TNA);Karachi, Pakistan - (KHI);Kathmandu, Nepal - (KTM);Kolkata, India - (CCU);Kuala Lumpur, Malaysia - (KUL);Lahore, Pakistan - (LHE);Langfang, China - (NAY);Luoyang, China - (LYA);Macau - (MFM);Malé, Maldives - (MLE);Manila, Philippines - (MNL);Mumbai, India - (BOM);Nagpur, India - (NAG);Nanning, China - (NNG);New Delhi, India - (DEL);Osaka, Japan - (KIX);Phnom Penh, Cambodia - (PNH);Qingdao, China - (TAO);Seoul, South Korea - (ICN);Shanghai, China - (SHA);Shenyang, China - (SHE);Shijiazhuang, China - (SJW);Singapore, Singapore - (SIN);Suzhou, China - (SZV);Taipei - (TPE);Thimphu, Bhutan - (PBH);Tianjin, China - (TSN);Tokyo, Japan - (NRT);Ulaanbaatar, Mongolia - (ULN);Vientiane, Laos - (VTE);Wuhan, China - (WUH);Wuxi, China - (WUX);Xi'an, China - (XIY);Yerevan, Armenia - (EVN);Zhengzhou, China - (CGO);Zuzhou, China - (CSX);Amsterdam, Netherlands - (AMS);Athens, Greece - (ATH);Barcelona, Spain - (BCN);Belgrade, Serbia - (BEG);Berlin, Germany - (TXL);Brussels, Belgium - (BRU);Bucharest, Romania - (OTP);Budapest, Hungary - (BUD);Chișinău, Moldova - (KIV);Copenhagen, Denmark - (CPH);Cork, Ireland -  (ORK);Dublin, Ireland - (DUB);Düsseldorf, Germany - (DUS);Edinburgh, United Kingdom - (EDI);Frankfurt, Germany - (FRA);Geneva, Switzerland - (GVA);Gothenburg, Sweden - (GOT);Hamburg, Germany - (HAM);Helsinki, Finland - (HEL);Istanbul, Turkey - (IST);Kyiv, Ukraine - (KBP);Lisbon, Portugal - (LIS);London, United Kingdom - (LHR);Luxembourg City, Luxembourg - (LUX);Madrid, Spain - (MAD);Manchester, United Kingdom - (MAN);Marseille, France - (MRS);Milan, Italy - (MXP);Moscow, Russia - (DME);Munich, Germany - (MUC);Nicosia, Cyprus - (LCA);Oslo, Norway - (OSL);Paris, France - (CDG);Prague, Czech Republic - (PRG);Reykjavík, Iceland - (KEF);Riga, Latvia - (RIX);Rome, Italy - (FCO);Saint Petersburg, Russia - (LED);Sofia, Bulgaria - (SOF);Stockholm, Sweden - (ARN);Tallinn, Estonia - (TLL);Thessaloniki, Greece - (SKG);Vienna, Austria - (VIE);Vilnius, Lithuania - (VNO);Warsaw, Poland - (WAW);Zagreb, Croatia - (ZAG);Zürich, Switzerland - (ZRH);Arica, Chile - (ARI);Asunción, Paraguay - (ASU);Bogotá, Colombia - (BOG);Buenos Aires, Argentina - (EZE);Curitiba, Brazil - (CWB);Fortaleza, Brazil - (FOR);Guatemala City, Guatemala - (GUA);Lima, Peru - (LIM);Medellín, Colombia - (MDE);Panama City, Panama - (PTY);Porto Alegre, Brazil - (POA);Quito, Ecuador - (UIO);Rio de Janeiro, Brazil - (GIG);São Paulo, Brazil - (GRU);Santiago, Chile - (SCL);Willemstad, Curaçao - (CUR);St. George's, Grenada - (GND);Amman, Jordan - (AMM);Baghdad, Iraq - (BGW);Baku, Azerbaijan - (GYD);Beirut, Lebanon - (BEY);Doha, Qatar - (DOH);Dubai, United Arab Emirates - (DXB);Kuwait City, Kuwait - (KWI);Manama, Bahrain - (BAH);Muscat, Oman - (MCT);Ramallah - (ZDM);Riyadh, Saudi Arabia - (RUH);Tel Aviv, Israel - (TLV);Ashburn, VA, United States - (IAD);Atlanta, GA, United States - (ATL);Boston, MA, United States - (BOS);Buffalo, NY, United States - (BUF);Calgary, AB, Canada - (YYC);Charlotte, NC, United States - (CLT);Chicago, IL, United States - (ORD);Columbus, OH, United States - (CMH);Dallas, TX, United States - (DFW);Denver, CO, United States - (DEN);Detroit, MI, United States - (DTW);Honolulu, HI, United States - (HNL);Houston, TX, United States - (IAH);Indianapolis, IN, United States - (IND);Jacksonville, FL, United States - (JAX);Kansas City, MO, United States - (MCI);Las Vegas, NV, United States - (LAS);Los Angeles, CA, United States - (LAX);McAllen, TX, United States - (MFE);Memphis, TN, United States - (MEM);Mexico City, Mexico - (MEX);Miami, FL, United States - (MIA);Minneapolis, MN, United States - (MSP);Montgomery, AL, United States - (MGM);Montréal, QC, Canada - (YUL);Nashville, TN, United States - (BNA);Newark, NJ, United States - (EWR);Norfolk, VA, United States - (ORF);Omaha, NE, United States - (OMA);Philadelphia, United States - (PHL);Phoenix, AZ, United States - (PHX);Pittsburgh, PA, United States - (PIT);Port-Au-Prince, Haiti - (PAP);Portland, OR, United States - (PDX);Queretaro, MX, Mexico - (QRO);Richmond, Virginia - (RIC);Sacramento, CA, United States - (SMF);Salt Lake City, UT, United States - (SLC);San Diego, CA, United States - (SAN);San Jose, CA, United States - (SJC);Saskatoon, SK, Canada - (YXE);Seattle, WA, United States - (SEA);St. Louis, MO, United States - (STL);Tampa, FL, United States - (TPA);Toronto, ON, Canada - (YYZ);Vancouver, BC, Canada - (YVR);Tallahassee, FL, United States - (TLH);Winnipeg, MB, Canada - (YWG);Adelaide, SA, Australia - (ADL);Auckland, New Zealand - (AKL);Brisbane, QLD, Australia - (BNE);Melbourne, VIC, Australia - (MEL);Noumea, New caledonia - (NOU);Perth, WA, Australia - (PER);Sydney, NSW, Australia - (SYD)".split(';'); 
+ let area = data.split("colo=")[1].split("\n")[0]; 
+ for (var i = 0; i < areas.length; i++) { 
+ if (areas[i].indexOf(area) != -1) { 
+ var ar = document.getElementById("cdn"); 
+ document.getElementById("cdn").innerHTML = areas[i]; 
+ document.getElementById("ip").innerHTML = data.split("ip=")[1].split("\n")[0]; 
+ //document.getElementById("httpos").innerHTML = data.split("visit_scheme=")[1].split("\n")[0]; 
+ //document.getElementById("uag").innerHTML = data.split("uag=")[1].split("\n")[0]; 
+ //document.getElementById("http").innerHTML = data.split("http=")[1].split("\n")[0]; 
+ document.getElementById("loc").innerHTML = data.split("loc=")[1].split("\n")[0]; 
+ //document.getElementById("tls").innerHTML = data.split("tls=")[1].split("\n")[0]; 
+ //document.getElementById("warp").innerHTML = data.split("warp=")[1].split("\n")[0]; 
+ break; 
+ } 
+ } 
+ } 
+ }) 
+ } 
+ $(document).ready(function() { 
+ getCDNinfo(); //页面加载完毕就获取CDN信息 
+ }); 
+ </script></a></li>
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="snow-switch">
+                        <span class="fa fa-snowflake-o"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async src="/js/snow.min.js"></script>
+    </div>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="399378190"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
