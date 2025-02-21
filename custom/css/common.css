@@ -1,0 +1,98 @@
+/* ====================== border radius / blur ====================== */
+
+#kratos-widget-area .widget.widget-kratos-about .photo-background {
+    border-radius: 5px 5px 0 0;
+}
+
+.kratos-entry-border-new .kratos-post-meta-new {
+    border-radius: 0 0 5px 5px;
+}
+
+.post-comments {
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+
+    #kratos-widget-area .widget,
+    .kratos-hentry,
+    .navigation div {
+        border-radius: 5px;
+        backdrop-filter: blur(6px);
+    }
+
+    #kratos-desktop-topnav {
+        backdrop-filter: blur(6px);
+    }
+}
+
+/* ====================== shadow ====================== */
+
+#kratos-widget-area .widget {
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.kr-tool .box {
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.kratos-hentry {
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* ====================== fit thumb ====================== */
+
+.kratos-entry-thumb img {
+    object-fit: contain;
+}
+
+/* ====================== article header style ====================== */
+
+article .kratos-page-inner .kratos-page-content h1,
+article .kratos-page-inner .kratos-page-content h2,
+article .kratos-page-inner .kratos-page-content h3,
+article .kratos-page-inner .kratos-page-content h4,
+article .kratos-page-inner .kratos-page-content h5,
+article .kratos-page-inner .kratos-page-content h6 {
+    transition: all 0.3s ease-in-out;
+}
+
+article .kratos-page-inner .kratos-page-content h1:hover,
+article .kratos-page-inner .kratos-page-content h2:hover,
+article .kratos-page-inner .kratos-page-content h3:hover,
+article .kratos-page-inner .kratos-page-content h4:hover,
+article .kratos-page-inner .kratos-page-content h5:hover,
+article .kratos-page-inner .kratos-page-content h6:hover {
+    color: #51aded;
+}
+
+/* ====================== sharing button color ====================== */
+
+#post-actions .share {
+    border-color: #51aded;
+    color: #51aded;
+}
+
+#post-actions .share:hover {
+    background-color: #51aded;
+}
+
+#kr-share-modal .kr-modal-header {
+    color: #51aded;
+}
+
+#kr-share-modal .kr-modal-header, #kr-share-modal .kr-share-qr {
+    border-color: #51aded;
+}
+
+/* ====================== footer style ====================== */
+
+#footer {
+    padding-bottom: 48px;
+    background-image: linear-gradient(#24384b, #23282d);
+}
