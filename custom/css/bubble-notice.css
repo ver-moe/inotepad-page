@@ -1,0 +1,53 @@
+@keyframes slideInRight {
+    from {
+        right: -230px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.bubbleNotice {
+    color: #666;
+    font-weight: bold;
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    width: 150px;
+    min-height: 15px;
+    line-height: 15px;
+    font-size: 15px;
+    z-index: 1;
+    opacity: 0.8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    animation: ease-in-out 0.5s slideInRight;
+    transition: top .75s ease-in-out;
+    word-break: break-all;
+}
+
+.bubbleNotice::before {
+    font: 100%/1 FontAwesome;
+    margin-right: 10px;
+}
+
+.bubbleNotice.normal::before {
+    color: #084298;
+    content: "\f021";
+}
+
+.bubbleNotice.problem::before {
+    color: #664d03;
+    content: "\f071";
+}
+
+.bubbleNotice.err::before {
+    color: #842029;
+    content: "\f12a";
+}
+
+.ok::before {
+    color: #0f5132;
+    content: "\f00c";
+}
