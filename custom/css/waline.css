@@ -1,0 +1,25 @@
+#w-comments .wl-reaction-list {
+    gap: 24px;
+}
+
+#w-comments .wl-reaction-img {
+    width: 72px;
+    height: 72px;
+}
+
+#w-comments .wl-reaction-votes {
+    font-size: 1em;
+}
+
+#w-comments,
+#w-comments .wl-meta span {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#w-comments .wl-panel,
+#w-comments .wl-header {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: background-color border;
+}
