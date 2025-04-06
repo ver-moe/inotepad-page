@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>某人的记事板</title>
+    <link>https://blog.ver.moe/</link>
+    
+    <image>
+      <url>https://blog.ver.moe/icon.png</url>
+      <title>某人的记事板</title>
+      <link>https://blog.ver.moe/</link>
+    </image>
+    
+    <atom:link href="https://blog.ver.moe/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>本博客属于一位没钱没权没势每天腺苷三磷酸超负荷工作但是热爱计算⑨+⑨并被誉为白嫖老干部的苦逼学生党外加车车人</description>
+    <pubDate>Sun, 06 Apr 2025 15:01:08 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>打赢复活赛？关于我个人网盘的一点话</title>
+      <link>https://blog.ver.moe/posts/%E7%BD%91%E7%9B%98%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B/</link>
+      <guid>https://blog.ver.moe/posts/%E7%BD%91%E7%9B%98%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B/</guid>
+      <pubDate>Sun, 06 Apr 2025 05:32:22 GMT</pubDate>
+      
+      <description>&lt;p&gt;打赢复活赛？个人网盘何去何从？&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/onedrive/">onedrive</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E7%BD%91%E7%9B%98/">网盘</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E8%B5%84%E6%BA%90/">资源</category>
+      
+      <category domain="https://blog.ver.moe/tags/Alist/">Alist</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/%E7%BD%91%E7%9B%98%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/fools-day-2025/</link>
+      <guid>https://blog.ver.moe/posts/fools-day-2025/</guid>
+      <pubDate>Tue, 01 Apr 2025 08:32:53 GMT</pubDate>
+      
+      <description>&lt;p&gt;今天是 2025 年 4 月 1 号愚人节，转发本条动态就有机会获取价值 114 万的诈骗秘籍，限量 514 份，先到先得!!!&lt;/p&gt;
+&lt;p&gt;本诈骗秘籍由著名整蛊专家&lt;strong&gt;埃普里罗·福罗斯戴&lt;/strong&gt;编写，内含&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;《从入门到入狱：三天速成电信话术》&lt;/em&gt;、&lt;br&gt;&lt;em&gt;《量子速骗法：如何让受害者主动打钱》&lt;/em&gt;、&lt;br&gt;&lt;em&gt;《反侦察必修课：如何用老年机躲过天网追踪》&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;等硬核章节。更随书附赠&quot;专业收款三件套&quot;：&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/fools-day-2025/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/lol-0331/</link>
+      <guid>https://blog.ver.moe/posts/lol-0331/</guid>
+      <pubDate>Mon, 31 Mar 2025 07:46:50 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;花了大把时间去优化博客，应该能明显感受到加载快了很多，比如左下角的那个播放器。还优化了一下阅读计数，现在不会一刷新涨一个阅读了。开心😋&lt;/p&gt;
+</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/lol-0331/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>使用Aplayer时的一些问题</title>
+      <link>https://blog.ver.moe/posts/%E4%BD%BF%E7%94%A8Aplayer%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
+      <guid>https://blog.ver.moe/posts/%E4%BD%BF%E7%94%A8Aplayer%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
+      <pubDate>Mon, 31 Mar 2025 03:25:06 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;https://github.com/DIYgod/APlayer&quot;&gt;aplayer&lt;/a&gt;引入了一个叫&lt;a href=&quot;https://github.com/alicelieutier/smoothScroll&quot;&gt;smoothScroll&lt;/a&gt;的包，用于在歌单列表选择歌曲后将列表滚动到合适的位置。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/Hexo/">Hexo</category>
+      
+      <category domain="https://blog.ver.moe/tags/Aplayer/">Aplayer</category>
+      
+      <category domain="https://blog.ver.moe/tags/Blog/">Blog</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/%E4%BD%BF%E7%94%A8Aplayer%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>C++20 黑魔法之——&lt;br&gt;编译期获取聚合类字段名/成员变量名</title>
+      <link>https://blog.ver.moe/posts/C++%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E7%BC%96%E8%AF%91%E6%9C%9F%E8%8E%B7%E5%8F%96%E8%81%9A%E5%90%88%E7%B1%BB%E5%AD%97%E6%AE%B5%E5%90%8D_%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%90%8D/</link>
+      <guid>https://blog.ver.moe/posts/C++%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E7%BC%96%E8%AF%91%E6%9C%9F%E8%8E%B7%E5%8F%96%E8%81%9A%E5%90%88%E7%B1%BB%E5%AD%97%E6%AE%B5%E5%90%8D_%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%90%8D/</guid>
+      <pubDate>Sun, 09 Mar 2025 14:36:41 GMT</pubDate>
+      
+      <description>&lt;p&gt;本文所有代码可在&lt;a href=&quot;https://github.com/valloside/FieldNameReflection&quot;&gt;这里找到&lt;/a&gt;&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/">来点教程</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/C/">C++</category>
+      
+      <category domain="https://blog.ver.moe/tags/Cpp/">Cpp</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E6%A8%A1%E6%9D%BF%E5%85%83%E7%BC%96%E7%A8%8B/">模板元编程</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/C++%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E7%BC%96%E8%AF%91%E6%9C%9F%E8%8E%B7%E5%8F%96%E8%81%9A%E5%90%88%E7%B1%BB%E5%AD%97%E6%AE%B5%E5%90%8D_%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%90%8D/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于最近的 e5/onedrive/sharepoint 封禁</title>
+      <link>https://blog.ver.moe/posts/%E5%85%B3%E4%BA%8E%E6%9C%80%E8%BF%91%E7%9A%84e5.onedrive.sharepoint%E5%B0%81%E7%A6%81/</link>
+      <guid>https://blog.ver.moe/posts/%E5%85%B3%E4%BA%8E%E6%9C%80%E8%BF%91%E7%9A%84e5.onedrive.sharepoint%E5%B0%81%E7%A6%81/</guid>
+      <pubDate>Fri, 28 Feb 2025 13:17:22 GMT</pubDate>
+      
+      <description>&lt;p&gt;大概从今年 2 月 10 号左右开始，微软进行了一波针对 e5 onedrive 的封禁，本人处于受影响者之中。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/onedrive/">onedrive</category>
+      
+      <category domain="https://blog.ver.moe/tags/e5/">e5</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85/">开发者订阅</category>
+      
+      <category domain="https://blog.ver.moe/tags/sharepoint/">sharepoint</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/%E5%85%B3%E4%BA%8E%E6%9C%80%E8%BF%91%E7%9A%84e5.onedrive.sharepoint%E5%B0%81%E7%A6%81/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>搭建一个自己喜欢的开发环境，VScode+MinGW64+CMake+vcpkg</title>
+      <link>https://blog.ver.moe/posts/vscode-mingw64-cmake-vcpkg/</link>
+      <guid>https://blog.ver.moe/posts/vscode-mingw64-cmake-vcpkg/</guid>
+      <pubDate>Wed, 25 Dec 2024 05:26:23 GMT</pubDate>
+      
+      <description>&lt;p&gt;咱知道配置一个喜欢的 C++ 开发环境一直都是一个难题，在 windows 下更是一言难尽，除非你愿意吃 Visual Studio 这一坨大史。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/">来点教程</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/C/">C++</category>
+      
+      <category domain="https://blog.ver.moe/tags/VScode/">VScode</category>
+      
+      <category domain="https://blog.ver.moe/tags/MinGW64/">MinGW64</category>
+      
+      <category domain="https://blog.ver.moe/tags/CMake/">CMake</category>
+      
+      <category domain="https://blog.ver.moe/tags/vcpkg/">vcpkg</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/vscode-mingw64-cmake-vcpkg/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>博客主题迁移笔记</title>
+      <link>https://blog.ver.moe/posts/blog-migration-note/</link>
+      <guid>https://blog.ver.moe/posts/blog-migration-note/</guid>
+      <pubDate>Tue, 24 Dec 2024 15:14:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;本文记录一下博客将 Kratos Rebirth 迁移到 v3 的过程。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/blog/">blog</category>
+      
+      <category domain="https://blog.ver.moe/tags/Kratos-Rebirth/">Kratos Rebirth</category>
+      
+      <category domain="https://blog.ver.moe/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/blog-migration-note/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>喜报！！！</title>
+      <link>https://blog.ver.moe/posts/kratos-rebirth-v3-is-here/</link>
+      <guid>https://blog.ver.moe/posts/kratos-rebirth-v3-is-here/</guid>
+      <pubDate>Tue, 24 Dec 2024 05:30:17 GMT</pubDate>
+      
+      <description>&lt;p&gt;好消息，好消息，特大好消息！！！！&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/%E5%90%B9%E6%B0%B4/">吹水</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/kratos-rebirth-v3-is-here/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>幻想人形演舞立绘索引</title>
+      <link>https://blog.ver.moe/posts/touhou-pdp/</link>
+      <guid>https://blog.ver.moe/posts/touhou-pdp/</guid>
+      <pubDate>Fri, 06 Dec 2024 07:17:02 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;最近搓了个小玩意：&lt;a href=&quot;https://thpdp.ver.moe/&quot;&gt;立绘索引 ~ 幻想人形演舞</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/%E4%B8%9C%E6%96%B9project/">东方project</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E5%B9%BB%E6%83%B3%E4%BA%BA%E5%BD%A2%E6%BC%94%E8%88%9E/">幻想人形演舞</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/touhou-pdp/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[已停用]网盘内的 TLMC 开放下载啦！！</title>
+      <link>https://blog.ver.moe/posts/TLMC-in-onedrive/</link>
+      <guid>https://blog.ver.moe/posts/TLMC-in-onedrive/</guid>
+      <pubDate>Fri, 19 Jul 2024 00:00:56 GMT</pubDate>
+      
+      <description>&lt;div class=&quot;alert alert-danger&quot;&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-exclamation&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class=&quot;text&quot;&gt;
+  &lt;p&gt;2025-2-21 onedrive触发FraudThrottle，抢救数据中，暂停使用&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;/div&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/TLMC/">TLMC</category>
+      
+      <category domain="https://blog.ver.moe/tags/Touhou-lossless-music-collection/">Touhou lossless music collection</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E4%B8%9C%E6%96%B9Project/">东方Project</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/TLMC-in-onedrive/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/lol0702/</link>
+      <guid>https://blog.ver.moe/posts/lol0702/</guid>
+      <pubDate>Tue, 02 Jul 2024 07:25:23 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Kratos Rebirth</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/lol0702/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于 clang-tidy 和新版 GCC 头文件不兼容的问题</title>
+      <link>https://blog.ver.moe/posts/clang-tidy-and-gcc/</link>
+      <guid>https://blog.ver.moe/posts/clang-tidy-and-gcc/</guid>
+      <pubDate>Wed, 22 May 2024 05:10:48 GMT</pubDate>
+      
+      <description>&lt;p&gt;众所周知，C++是一个连搭建环境都能折磨人的语言。不巧的是，LLVM 与 GCC 之间也能擦出激烈的火花，起因如下：&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/clang-tidy-and-gcc/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/lol415-2/</link>
+      <guid>https://blog.ver.moe/posts/lol415-2/</guid>
+      <pubDate>Mon, 15 Apr 2024 15:30:07 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;修好力，qexo是数据库出问题了；评论区是因为版本写错了，于是我在极度愤怒的情况下把waline干到最新的v3.1.3（&lt;/p&gt;
+</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/lol415-2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/lol415/</link>
+      <guid>https://blog.ver.moe/posts/lol415/</guid>
+      <pubDate>Mon, 15 Apr 2024 10:15:48 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;woc，更新一下theme，评论区炸了，qexo也炸了。。。&lt;/p&gt;
+</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/lol415/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/2-years/</link>
+      <guid>https://blog.ver.moe/posts/2-years/</guid>
+      <pubDate>Mon, 11 Dec 2023 13:15:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;唔，明天就是博客成立二周年了&lt;/p&gt;
+</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/2-years/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>写点数学</title>
+      <link>https://blog.ver.moe/posts/math/</link>
+      <guid>https://blog.ver.moe/posts/math/</guid>
+      <pubDate>Sun, 26 Nov 2023 12:21:03 GMT</pubDate>
+      
+      <description>&lt;p&gt;来点数学呐，可香了。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%99%E7%82%B9%E6%95%B0%E5%AD%A6/">写点数学</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/math/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>数字躲猫猫</title>
+      <link>https://blog.ver.moe/posts/digital-hide-and-seek/</link>
+      <guid>https://blog.ver.moe/posts/digital-hide-and-seek/</guid>
+      <pubDate>Fri, 24 Nov 2023 13:38:22 GMT</pubDate>
+      
+      <description>有东西被加密了, 请输入神秘字符串查看.</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E7%99%BD%E8%89%B2%E9%AD%94%E6%B3%95/">白色魔法</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/digital-hide-and-seek/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Cloudflare R2对象存储当图床测试</title>
+      <link>https://blog.ver.moe/posts/cloudflare-r2-image-host/</link>
+      <guid>https://blog.ver.moe/posts/cloudflare-r2-image-host/</guid>
+      <pubDate>Mon, 20 Nov 2023 13:42:51 GMT</pubDate>
+      
+      <description>&lt;p&gt;老早之前就看到了Cloudflare的R2存储,当时还是Beta版本。&lt;br&gt;今天突然给我打广告，&lt;del&gt;大呼改变未来的存储方式，&lt;/del&gt;那好，嫖来放点图试试。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E7%99%BD%E5%AB%96%E4%B8%96%E7%95%8C/">白嫖世界</category>
+      
+      
+      <category domain="https://blog.ver.moe/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/">对象存储</category>
+      
+      <category domain="https://blog.ver.moe/tags/cloudflare-R2/">cloudflare R2</category>
+      
+      <category domain="https://blog.ver.moe/tags/%E5%9B%BE%E5%BA%8A/">图床</category>
+      
+      
+      <comments>https://blog.ver.moe/posts/cloudflare-r2-image-host/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ver.moe/posts/700days/</link>
+      <guid>https://blog.ver.moe/posts/700days/</guid>
+      <pubDate>Sun, 12 Nov 2023 12:28:33 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;woc</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</category>
+      
+      
+      
+      <comments>https://blog.ver.moe/posts/700days/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
