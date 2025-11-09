@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+  
+  <title>搭建在线网盘 | 某人的记事板</title>
+  <link rel="canonical" href="https://blog.ver.moe/posts/onedrive-list/">
+  <meta name="author" content="­" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="alist, onedrive, onemanager, 教程" />
+  
+  <meta name="description" content="利用Onemanager&#x2F;Alist搭建在线网盘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建在线网盘">
+<meta property="og:url" content="https://blog.ver.moe/posts/onedrive-list/">
+<meta property="og:site_name" content="某人的记事板">
+<meta property="og:description" content="利用Onemanager&#x2F;Alist搭建在线网盘">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/29/1omSNBEJcuM89Dg.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/29/iGd5A4tMjYcBKhX.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/29/nueGLkTrUY2Fvho.jpg">
+<meta property="article:published_time" content="2022-02-11T04:36:28.000Z">
+<meta property="article:modified_time" content="2024-12-24T12:27:43.000Z">
+<meta property="article:author" content="­">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="alist">
+<meta property="article:tag" content="onedrive">
+<meta property="article:tag" content="onemanager">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/29/1omSNBEJcuM89Dg.png">
+  
+    <link rel="alternate" href="/atom.xml" title="某人的记事板" type="application/atom+xml"><link rel="alternate" href="/rss2.xml" title="某人的记事板" type="application/rss+xml">
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kr-core.min.css" media="all"></link>
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/highlight.js/night-eighties.min.css" media="all"></link>
+  
+  <link rel="stylesheet" id="theme-light-css" href="/css/kr-theme/light.min.css" media="all"></link>
+  <link rel="stylesheet" id="theme-dark-css" href="/css/kr-theme/dark.min.css" media="(prefers-color-scheme: dark)"></link>
+  <script src="/js/kr-theme.min.js"></script>
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></link>
+  
+    <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></link>
+  
+  
+    <link rel="stylesheet" href="/vendors/viewerjs@1.11.6/dist/viewer.min.css"></link>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  
+    <script src="/vendors/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
+  
+  <!-- 自定义站点横幅和背景 -->
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+      html[data-theme="dark"] .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+        html[data-theme="dark"] body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+    
+      .widget-kratos-about .photo-background {
+        background-image: url('/images/about.webp');
+      }
+      html[data-theme="dark"] .widget-kratos-about .photo-background {
+        background-image: url('/images/about.webp');
+      }
+    
+  </style>
+
+  <!-- 额外的追加注入项 -->
+  
+    <link rel="stylesheet" id="custom-common-css" href="/custom/css/common.css"/>
+<link rel="stylesheet" id="hide-all-css" href="/custom/css/hide-all.css"/>
+<link rel="stylesheet" id="light-waves-css" href="/custom/css/light-waves.css" media="all"/>
+<link rel="stylesheet" id="dark-waves-css" href="/custom/css/dark-waves.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" id="animate-css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" id="aplayer-css" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+<link rel="stylesheet" id="waline-css" href="/vendors/waline@3.5.6/waline.css" />
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    <li>
+                                        
+                                            <a href="/">
+                                        
+                                            
+                                                <i class="fa fa-home"></i>
+                                            
+                                            Home
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/archives/">
+                                        
+                                            
+                                                <i class="fa fa-book"></i>
+                                            
+                                            Archives
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a>
+                                        
+                                            
+                                                <i class="fa fa-download"></i>
+                                            
+                                            Netdisk
+                                        </a>
+                                        
+                                            <ul class="sub-menu">
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://file.ver.moe">
+                                                            
+                                                                <i class="fa fa-check"></i>
+                                                            
+                                                            netdisk-1
+                                                        </a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a>
+                                        
+                                            
+                                                <i class="fa fa-cogs"></i>
+                                            
+                                            Backend
+                                        </a>
+                                        
+                                            <ul class="sub-menu">
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://blog-qexo.ver.moe">
+                                                            
+                                                                <i class="fa fa-user-circle-o"></i>
+                                                            
+                                                            Qexo
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://blog-waline.ver.moe/ui">
+                                                            
+                                                                <i class="fa fa-commenting-o"></i>
+                                                            
+                                                            Waline
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://img.ver.moe">
+                                                            
+                                                                <i class="fa fa-picture-o"></i>
+                                                            
+                                                            Picx
+                                                        </a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/friends/">
+                                        
+                                            
+                                                <i class="fa fa-paw"></i>
+                                            
+                                            Friends
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/about/">
+                                        
+                                            
+                                                <i class="fa fa-user"></i>
+                                            
+                                            About me
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a>
+                                        
+                                            
+                                                <i class="fa fa-link"></i>
+                                            
+                                            Others
+                                        </a>
+                                        
+                                            <ul class="sub-menu">
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://candinya.com">
+                                                            
+                                                                <i class="fa fa-user-circle-o"></i>
+                                                            
+                                                            伟大的candinya
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
+                                                            
+                                                                <i class="fa fa-github"></i>
+                                                            
+                                                            可爱的Kratos Rebirth
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="/bullshit/">
+                                                            
+                                                                <i class="fa fa-thumbs-down"></i>
+                                                            
+                                                            神秘之域
+                                                        </a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">某人的记事板</a></div>
+                    <div id="kratos-nav-toggle-wrapper" class="nav-toggle">
+                        <a id="kratos-nav-toggle" class="kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>某人的记事板</h2> <br />
+                        <span>-用来堆垃圾-</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+
+
+        
+
+            
+                
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" alt="­" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">本博客属于一位没钱没权没势每天腺苷三磷酸超负荷工作但是热爱计算⑨+⑨并被誉为白嫖老干部的苦逼学生党外加车车人</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                34
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                6
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                46
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Onemanager"><span class="toc-text">Onemanager</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Aist"><span class="toc-text">Aist</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E4%BA%8E-Railway"><span class="toc-text">部署于 Railway</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E4%BA%8Ereplit"><span class="toc-text">部署于replit</span></a></li></ol></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类列表</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E7%82%B9%E6%95%B0%E5%AD%A6/">写点数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/">冷吟闲醉</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/">来点教程</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%99%BD%E5%AB%96%E4%B8%96%E7%95%8C/">白嫖世界</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%99%BD%E8%89%B2%E9%AD%94%E6%B3%95/">白色魔法</a><span class="category-list-count">2</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/Alist/" style="font-size: 0.6em;">Alist</a> <a href="/tags/Aplayer/" style="font-size: 0.6em;">Aplayer</a> <a href="/tags/Blog/" style="font-size: 0.6em;">Blog</a> <a href="/tags/C/" style="font-size: 0.73em;">C++</a> <a href="/tags/CMake/" style="font-size: 0.6em;">CMake</a> <a href="/tags/Clang/" style="font-size: 0.6em;">Clang</a> <a href="/tags/Clangd/" style="font-size: 0.6em;">Clangd</a> <a href="/tags/Cpp/" style="font-size: 0.67em;">Cpp</a> <a href="/tags/Hexo/" style="font-size: 0.67em;">Hexo</a> <a href="/tags/Kratos-Rebirth/" style="font-size: 0.6em;">Kratos Rebirth</a> <a href="/tags/LLVM/" style="font-size: 0.6em;">LLVM</a> <a href="/tags/MinGW64/" style="font-size: 0.6em;">MinGW64</a> <a href="/tags/TLMC/" style="font-size: 0.6em;">TLMC</a> <a href="/tags/Touhou-lossless-music-collection/" style="font-size: 0.6em;">Touhou lossless music collection</a> <a href="/tags/VScode/" style="font-size: 0.6em;">VScode</a> <a href="/tags/alist/" style="font-size: 0.67em;">alist</a> <a href="/tags/blog/" style="font-size: 0.8em;">blog</a> <a href="/tags/cloudflare-R2/" style="font-size: 0.6em;">cloudflare R2</a>
+      </div>
+  </aside>
+
+            
+    </div>
+</section>
+            
+
+            <section class="kr-main-col col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://blog.ver.moe/posts/onedrive-list/">
+    <div class="kratos-hentry kratos-page-inner clearfix">
+        <header class="kratos-page-header">
+            
+                <h1 class="kratos-page-title text-center" itemprop="name headline">搭建在线网盘</h1>
+            
+            <ul class="kratos-page-meta text-center">
+                <li><time datetime="2022-02-11T04:36:28.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-02-11</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">­</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            560
+                        
+                        字
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span data-path="/posts/onedrive-list/" class="waline-pageview-count"> </span> 次阅读
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-commenting-o"></i>
+                        <span data-path="/posts/onedrive-list/" class="waline-comment-count"> </span> 条评论
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-page-content kr-post">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert" data-after-days="60">
+                <div class="icon"><i class="fa fa-history"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1735043263000"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Onemanager"><span class="toc-number">1.</span> <span class="toc-text">Onemanager</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Aist"><span class="toc-number">2.</span> <span class="toc-text">Aist</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E4%BA%8E-Railway"><span class="toc-number">2.1.</span> <span class="toc-text">部署于 Railway</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E4%BA%8Ereplit"><span class="toc-number">2.2.</span> <span class="toc-text">部署于replit</span></a></li></ol></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><p>利用Onemanager&#x2F;Alist搭建在线网盘</p>
+<span id="more"></span>
+<h2 id="Onemanager"><a href="#Onemanager" class="headerlink" title="Onemanager"></a>Onemanager</h2><p><a target="_blank" rel="noopener" href="https://github.com/qkqpttgf/OneManager-php">github项目</a>内已经写的很清楚了</p>
+<p>本文主讲Alist</p>
+<h2 id="Aist"><a href="#Aist" class="headerlink" title="Aist"></a>Aist</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Xhofe/alist">github项目</a></li>
+<li><a target="_blank" rel="noopener" href="https://alist-doc.nn.ci/docs/intro">说明文档</a></li>
+</ul>
+<h3 id="部署于-Railway"><a href="#部署于-Railway" class="headerlink" title="部署于 Railway"></a><del>部署于 Railway</del></h3><ul>
+<li><del>项目：<a target="_blank" rel="noopener" href="https://github.com/alist-org/alist-railway">https://github.com/alist-org/alist-railway</a></del> 失效</li>
+</ul>
+<p><strong><del>食用方法（译自项目文档）</del></strong></p>
+<ol>
+<li><del>Fork 项目</del></li>
+<li><del>打开<a target="_blank" rel="noopener" href="https://railway.app/">官网</a>，点击<code>Start a New Project</code></del></li>
+<li><del>选择<code>Deploy From Repo</code>,选择你Fork的项目，选择<code>mysql</code>分支</del></li>
+<li><del>添加<code>mysql</code>plugin</del></li>
+<li><del>添加环境变量（variables）,变量名：<code>PORT</code> ，值：<code>5244</code>，然后再次部署</del></li>
+</ol>
+<h3 id="部署于replit"><a href="#部署于replit" class="headerlink" title="部署于replit"></a>部署于replit</h3><ol>
+<li>新建repl,template选 go 语言 ，title自己写<br><img src="https://s2.loli.net/2022/01/29/1omSNBEJcuM89Dg.png"></li>
+<li>下载最新release: <a target="_blank" rel="noopener" href="https://github.com/Xhofe/alist/releases">https://github.com/Xhofe/alist/releases</a> , 选择alist-linux-amd64.tar.gz，上传至repl内<br><img src="https://s2.loli.net/2022/01/29/iGd5A4tMjYcBKhX.jpg"></li>
+<li>按照<a target="_blank" rel="noopener" href="https://alist-doc.nn.ci/docs/install/manual#%E8%BF%90%E8%A1%8C%E8%B5%B7%E6%9D%A5">运行起来</a>配置</li>
+<li>新建文件<code>.repli</code>,内容：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">language = &quot;bash&quot;</span><br><span class="line">run = &quot;./alist-linux-amd64&quot;</span><br></pre></td></tr></table></figure>
+<p>点击<code>run</code></p>
+<p><strong>附：自定义域名</strong></p>
+<p>在右侧预览窗口内的一个小铅笔按钮（藏得真深）<br><img src="https://s2.loli.net/2022/01/29/nueGLkTrUY2Fvho.jpg"></p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <span itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</span>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            
+            
+                <div class="post-actions text-center clearfix" id="post-actions">
+                
+                
+                    <a class="share" href="javascript:;" onclick="krOpenShareModal()"><i class="fa fa-share-alt"></i> 分享</a>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/alist/" rel="tag">alist</a>, <a class="tag-none-link" href="/tags/onedrive/" rel="tag">onedrive</a>, <a class="tag-none-link" href="/tags/onemanager/" rel="tag">onemanager</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-12-24T12:27:43.000Z" itemprop="dateModified">最后编辑：2024-12-24</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" blog 建成笔记" href="/posts/blog/"><i class="fa fa-angle-left"></i> 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 让Hexo彻底离开本地" href="/posts/Hexo-advanced-deployment/">下一篇 <i class="fa fa-angle-right"></i></a>
+            </div>
+            
+        </nav>
+    
+    
+        <div class="comment-post">
+            <div id="w-comments" class="kr-comments" data-path="/posts/onedrive-list/"></div>
+        </div>
+    
+</article>
+
+        
+
+            </section>
+
+            
+
+        
+
+                </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                            <li>
+                                <a href="mailto:yuriwasaikou@gmial.com" target="_blank" rel="nofollow">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://github.com/ver-moe" target="_blank" rel="nofollow">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/atom.xml" target="_blank" rel="nofollow">
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2025 某人的记事板 版权所有.</li>
+                            <li>本站已苟活<span id="kr-since">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>自豪地使用 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a> 主题</li>
+                            <li>站点由 ­ 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
+                        </div>
+                        <!-- 额外的追加注入项 -->
+                        
+                            <div>
+                                
+                                    <li>POWERED BY <a href="https://hexo.io" target="_blank" rel="nofollow">HEXO</a></li>
+                                
+                                    <li>HOSTED ON <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a></li>
+                                
+                            </div>
+                        
+                            <div>
+                                
+                                    <li><a href="https://icp.gov.moe/?keyword=20226222" target="_blank">萌ICP备20226222号</a></li>
+                                
+                            </div>
+                        
+                            <div>
+                                
+                                    <li>站点访问量: <span id="qexo-site-pv">Loading...</span>, 站点访客数: <span id="qexo-site-uv">Loading...</span>, 页面访问量: <span id="qexo-page-pv">Loading...</span>
+</li>
+                                
+                            </div>
+                        
+                            <div>
+                                
+                                    <li>ip地址: <span id="ip">Loading...</span>, cdn节点: <span id="cdn">Loading...</span>, ip归属地: <span id="loc">Loading...</span>
+</li>
+                                
+                            </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                <div class="box theme-box" id="theme-toggle">
+                    <span class="fa fa-adjust"></span>
+                </div>
+            </div>
+            <div id="gotop-box" class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+
+
+
+    <div id="kr-share-modal" class="kr-modal">
+    <div class="kr-modal-bg" onclick="krCloseShareModal()"></div>
+    <div class="kr-modal-content">
+        <div class="kr-modal-header">
+            <div class="kr-modal-icon">
+                <i class="fa fa-share-alt"></i>
+            </div>
+            <div class="kr-modal-title">分享这一刻</div>
+            <button class="kr-modal-close" onclick="krCloseShareModal()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+        </div>
+        <div class="kr-modal-body">
+            <div class="kr-share-message">让朋友们也来瞅瞅！</div>
+            <div class="kr-share-qr" id="kr-share-qr"></div>
+            <div class="kr-share-platforms">
+                
+                    <button class="kr-share-platform-button" style="color: #000;" title="Twitter" onclick="krShareModalOpenPlatform('https://x.com/intent/tweet?text=$TITLE&url=$URL')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+</svg>
+
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script defer src="/js/kr-modal/share.min.js"></script>
+
+
+
+<!-- 额外的追加注入项 -->
+
+    <canvas id="snow"></canvas>
+<meting-js server="netease" type="playlist" id="442403999" fixed="true" order="random"></meting-js>
+
+
+
+        <script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+  <script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+
+
+
+  <script defer src="/vendors/viewerjs@1.11.6/dist/viewer.min.js"></script>
+
+
+<script defer src="/js/kr-core.min.js"></script>
+
+
+  <script defer src="/js/kr-pjax.min.js"></script>
+
+
+<!-- 额外的追加注入项 -->
+
+  <script defer src="https://cdn.jsdelivr.net/npm/qexo-static@3.0.5/hexo/statistic/statistic.js"></script>
+<script defer src="/custom/js/waves.js"></script>
+<script defer src="/custom/js/animated.js"></script>
+<script defer src="/custom/js/common.js"></script>
+<script async src="/custom/js/bubble-notice.js"></script>
+<script async src="/custom/js/snow.js"></script>
+<script async src="/custom/js/random-post-cover.js"></script>
+<script defer type="module" src="/custom/js/waline.js"></script>
+<script defer src="/custom/js/APlayer.min.js"></script>
+<script defer src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
+<script async src="/custom/js/cursor-effects.js"></script>
+<script async src="/custom/js/leave-event.js"></script>
+
+
+
+    </body>
+</html>

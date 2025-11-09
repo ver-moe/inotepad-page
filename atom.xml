@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>某人的记事板</title>
+  <icon>https://blog.ver.moe/icon.png</icon>
+  <subtitle>-用来堆垃圾-</subtitle>
+  <link href="https://blog.ver.moe/atom.xml" rel="self"/>
+  
+  <link href="https://blog.ver.moe/"/>
+  <updated>2025-11-09T08:49:04.000Z</updated>
+  <id>https://blog.ver.moe/</id>
+  
+  <author>
+    <name>­</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次魔改clangd</title>
+    <link href="https://blog.ver.moe/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%AD%94%E6%94%B9clangd/"/>
+    <id>https://blog.ver.moe/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%AD%94%E6%94%B9clangd/</id>
+    <published>2025-11-09T07:30:54.000Z</published>
+    <updated>2025-11-09T08:49:04.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记一次魔改 clangd。本文内容均为个人理解，如有错误欢迎指出。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="来点教程" scheme="https://blog.ver.moe/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="C++" scheme="https://blog.ver.moe/tags/C/"/>
+    
+    <category term="Cpp" scheme="https://blog.ver.moe/tags/Cpp/"/>
+    
+    <category term="LLVM" scheme="https://blog.ver.moe/tags/LLVM/"/>
+    
+    <category term="Clang" scheme="https://blog.ver.moe/tags/Clang/"/>
+    
+    <category term="Clangd" scheme="https://blog.ver.moe/tags/Clangd/"/>
+    
+    <category term="悬浮提示" scheme="https://blog.ver.moe/tags/%E6%82%AC%E6%B5%AE%E6%8F%90%E7%A4%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/250609_%E7%BD%91%E7%9B%98%E5%8F%88%E6%B2%A1%E4%BA%86%EF%BC%9F/"/>
+    <id>https://blog.ver.moe/posts/250609_%E7%BD%91%E7%9B%98%E5%8F%88%E6%B2%A1%E4%BA%86%EF%BC%9F/</id>
+    <published>2025-06-09T06:31:38.882Z</published>
+    <updated>2025-06-09T14:40:06.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;网盘又没了？没势的，只是校方封了号或者单纯的到期回收了，毕竟那个 edu</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="吹水" scheme="https://blog.ver.moe/tags/%E5%90%B9%E6%B0%B4/"/>
+    
+    <category term="网盘" scheme="https://blog.ver.moe/tags/%E7%BD%91%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>打赢复活赛？关于我个人网盘的一点话</title>
+    <link href="https://blog.ver.moe/posts/%E7%BD%91%E7%9B%98%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B/"/>
+    <id>https://blog.ver.moe/posts/%E7%BD%91%E7%9B%98%E6%89%93%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B/</id>
+    <published>2025-04-06T05:32:22.000Z</published>
+    <updated>2025-04-06T15:01:08.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;打赢复活赛？个人网盘何去何从？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="网盘" scheme="https://blog.ver.moe/tags/%E7%BD%91%E7%9B%98/"/>
+    
+    <category term="onedrive" scheme="https://blog.ver.moe/tags/onedrive/"/>
+    
+    <category term="资源" scheme="https://blog.ver.moe/tags/%E8%B5%84%E6%BA%90/"/>
+    
+    <category term="Alist" scheme="https://blog.ver.moe/tags/Alist/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/fools-day-2025/"/>
+    <id>https://blog.ver.moe/posts/fools-day-2025/</id>
+    <published>2025-04-01T08:32:53.000Z</published>
+    <updated>2025-04-05T14:30:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是 2025 年 4 月 1 号愚人节，转发本条动态就有机会获取价值 114 万的诈骗秘籍，限量 514 份，先到先得!!!&lt;/p&gt;
+&lt;p&gt;本诈骗秘籍由著名整蛊专家&lt;strong&gt;埃普里罗·福罗斯戴&lt;/strong&gt;编写，内含&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;《从入门到入狱：三天速成电信话术》&lt;/em&gt;、&lt;br&gt;&lt;em&gt;《量子速骗法：如何让受害者主动打钱》&lt;/em&gt;、&lt;br&gt;&lt;em&gt;《反侦察必修课：如何用老年机躲过天网追踪》&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;等硬核章节。更随书附赠&quot;专业收款三件套&quot;：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/lol-0331/"/>
+    <id>https://blog.ver.moe/posts/lol-0331/</id>
+    <published>2025-03-31T07:46:50.626Z</published>
+    <updated>2025-03-31T16:27:12.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;花了大把时间去优化博客，应该能明显感受到加载快了很多，比如左下角的那个播放器。还优化了一下阅读计数，现在不会一刷新涨一个阅读了。开心😋&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Aplayer时的一些问题</title>
+    <link href="https://blog.ver.moe/posts/%E4%BD%BF%E7%94%A8Aplayer%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"/>
+    <id>https://blog.ver.moe/posts/%E4%BD%BF%E7%94%A8Aplayer%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</id>
+    <published>2025-03-31T03:25:06.000Z</published>
+    <updated>2025-04-04T06:53:26.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/DIYgod/APlayer&quot;&gt;aplayer&lt;/a&gt;引入了一个叫&lt;a href=&quot;https://github.com/alicelieutier/smoothScroll&quot;&gt;smoothScroll&lt;/a&gt;的包，用于在歌单列表选择歌曲后将列表滚动到合适的位置。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客建设" scheme="https://blog.ver.moe/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.ver.moe/tags/Hexo/"/>
+    
+    <category term="Aplayer" scheme="https://blog.ver.moe/tags/Aplayer/"/>
+    
+    <category term="Blog" scheme="https://blog.ver.moe/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++20 黑魔法之——&lt;br&gt;编译期获取聚合类字段名/成员变量名</title>
+    <link href="https://blog.ver.moe/posts/C++%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E7%BC%96%E8%AF%91%E6%9C%9F%E8%8E%B7%E5%8F%96%E8%81%9A%E5%90%88%E7%B1%BB%E5%AD%97%E6%AE%B5%E5%90%8D_%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%90%8D/"/>
+    <id>https://blog.ver.moe/posts/C++%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E7%BC%96%E8%AF%91%E6%9C%9F%E8%8E%B7%E5%8F%96%E8%81%9A%E5%90%88%E7%B1%BB%E5%AD%97%E6%AE%B5%E5%90%8D_%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%90%8D/</id>
+    <published>2025-03-09T14:36:41.000Z</published>
+    <updated>2025-03-15T13:21:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文所有代码可在&lt;a href=&quot;https://github.com/valloside/FieldNameReflection&quot;&gt;这里找到&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="来点教程" scheme="https://blog.ver.moe/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="C++" scheme="https://blog.ver.moe/tags/C/"/>
+    
+    <category term="Cpp" scheme="https://blog.ver.moe/tags/Cpp/"/>
+    
+    <category term="模板元编程" scheme="https://blog.ver.moe/tags/%E6%A8%A1%E6%9D%BF%E5%85%83%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于最近的 e5/onedrive/sharepoint 封禁</title>
+    <link href="https://blog.ver.moe/posts/%E5%85%B3%E4%BA%8E%E6%9C%80%E8%BF%91%E7%9A%84e5.onedrive.sharepoint%E5%B0%81%E7%A6%81/"/>
+    <id>https://blog.ver.moe/posts/%E5%85%B3%E4%BA%8E%E6%9C%80%E8%BF%91%E7%9A%84e5.onedrive.sharepoint%E5%B0%81%E7%A6%81/</id>
+    <published>2025-02-28T13:17:22.000Z</published>
+    <updated>2025-03-03T05:07:25.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;大概从今年 2 月 10 号左右开始，微软进行了一波针对 e5 onedrive 的封禁，本人处于受影响者之中。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="onedrive" scheme="https://blog.ver.moe/tags/onedrive/"/>
+    
+    <category term="e5" scheme="https://blog.ver.moe/tags/e5/"/>
+    
+    <category term="开发者订阅" scheme="https://blog.ver.moe/tags/%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85/"/>
+    
+    <category term="sharepoint" scheme="https://blog.ver.moe/tags/sharepoint/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建一个自己喜欢的开发环境，VScode+MinGW64+CMake+vcpkg</title>
+    <link href="https://blog.ver.moe/posts/vscode-mingw64-cmake-vcpkg/"/>
+    <id>https://blog.ver.moe/posts/vscode-mingw64-cmake-vcpkg/</id>
+    <published>2024-12-25T05:26:23.000Z</published>
+    <updated>2024-12-25T13:46:20.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;咱知道配置一个喜欢的 C++ 开发环境一直都是一个难题，在 windows 下更是一言难尽，除非你愿意吃 Visual Studio 这一坨大史。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="来点教程" scheme="https://blog.ver.moe/categories/%E6%9D%A5%E7%82%B9%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="C++" scheme="https://blog.ver.moe/tags/C/"/>
+    
+    <category term="VScode" scheme="https://blog.ver.moe/tags/VScode/"/>
+    
+    <category term="MinGW64" scheme="https://blog.ver.moe/tags/MinGW64/"/>
+    
+    <category term="CMake" scheme="https://blog.ver.moe/tags/CMake/"/>
+    
+    <category term="vcpkg" scheme="https://blog.ver.moe/tags/vcpkg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客主题迁移笔记</title>
+    <link href="https://blog.ver.moe/posts/blog-migration-note/"/>
+    <id>https://blog.ver.moe/posts/blog-migration-note/</id>
+    <published>2024-12-24T15:14:19.000Z</published>
+    <updated>2024-12-25T05:24:59.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文记录一下博客将 Kratos Rebirth 迁移到 v3 的过程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客建设" scheme="https://blog.ver.moe/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="blog" scheme="https://blog.ver.moe/tags/blog/"/>
+    
+    <category term="Kratos Rebirth" scheme="https://blog.ver.moe/tags/Kratos-Rebirth/"/>
+    
+    <category term="Hexo" scheme="https://blog.ver.moe/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>喜报！！！</title>
+    <link href="https://blog.ver.moe/posts/kratos-rebirth-v3-is-here/"/>
+    <id>https://blog.ver.moe/posts/kratos-rebirth-v3-is-here/</id>
+    <published>2024-12-24T05:30:17.643Z</published>
+    <updated>2024-12-24T13:32:34.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;好消息，好消息，特大好消息！！！！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="吹水" scheme="https://blog.ver.moe/tags/%E5%90%B9%E6%B0%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>幻想人形演舞立绘索引</title>
+    <link href="https://blog.ver.moe/posts/touhou-pdp/"/>
+    <id>https://blog.ver.moe/posts/touhou-pdp/</id>
+    <published>2024-12-06T07:17:02.229Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近搓了个小玩意：&lt;a href=&quot;https://thpdp.ver.moe/&quot;&gt;立绘索引 ~ 幻想人形演舞</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="东方project" scheme="https://blog.ver.moe/tags/%E4%B8%9C%E6%96%B9project/"/>
+    
+    <category term="幻想人形演舞" scheme="https://blog.ver.moe/tags/%E5%B9%BB%E6%83%B3%E4%BA%BA%E5%BD%A2%E6%BC%94%E8%88%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[已停用]网盘内的 TLMC 开放下载啦！！</title>
+    <link href="https://blog.ver.moe/posts/TLMC-in-onedrive/"/>
+    <id>https://blog.ver.moe/posts/TLMC-in-onedrive/</id>
+    <published>2024-07-19T00:00:56.000Z</published>
+    <updated>2025-04-05T14:33:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;alert alert-danger&quot;&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fa fa-exclamation&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class=&quot;text&quot;&gt;
+  &lt;p&gt;2025-2-21 onedrive触发FraudThrottle，抢救数据中，暂停使用&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;/div&gt;</summary>
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+    <category term="TLMC" scheme="https://blog.ver.moe/tags/TLMC/"/>
+    
+    <category term="Touhou lossless music collection" scheme="https://blog.ver.moe/tags/Touhou-lossless-music-collection/"/>
+    
+    <category term="东方Project" scheme="https://blog.ver.moe/tags/%E4%B8%9C%E6%96%B9Project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/lol0702/"/>
+    <id>https://blog.ver.moe/posts/lol0702/</id>
+    <published>2024-07-02T07:25:23.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Kratos Rebirth</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于 clang-tidy 和新版 GCC 头文件不兼容的问题</title>
+    <link href="https://blog.ver.moe/posts/clang-tidy-and-gcc/"/>
+    <id>https://blog.ver.moe/posts/clang-tidy-and-gcc/</id>
+    <published>2024-05-22T05:10:48.000Z</published>
+    <updated>2025-04-05T16:31:31.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;众所周知，C++是一个连搭建环境都能折磨人的语言。不巧的是，LLVM 与 GCC 之间也能擦出激烈的火花，起因如下：&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/lol415-2/"/>
+    <id>https://blog.ver.moe/posts/lol415-2/</id>
+    <published>2024-04-15T15:30:07.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;修好力，qexo是数据库出问题了；评论区是因为版本写错了，于是我在极度愤怒的情况下把waline干到最新的v3.1.3（&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/lol415/"/>
+    <id>https://blog.ver.moe/posts/lol415/</id>
+    <published>2024-04-15T10:15:48.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;woc，更新一下theme，评论区炸了，qexo也炸了。。。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.ver.moe/posts/2-years/"/>
+    <id>https://blog.ver.moe/posts/2-years/</id>
+    <published>2023-12-11T13:15:53.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;唔，明天就是博客成立二周年了&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="冷吟闲醉" scheme="https://blog.ver.moe/categories/%E5%86%B7%E5%90%9F%E9%97%B2%E9%86%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写点数学</title>
+    <link href="https://blog.ver.moe/posts/math/"/>
+    <id>https://blog.ver.moe/posts/math/</id>
+    <published>2023-11-26T12:21:03.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;来点数学呐，可香了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="写点数学" scheme="https://blog.ver.moe/categories/%E5%86%99%E7%82%B9%E6%95%B0%E5%AD%A6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数字躲猫猫</title>
+    <link href="https://blog.ver.moe/posts/digital-hide-and-seek/"/>
+    <id>https://blog.ver.moe/posts/digital-hide-and-seek/</id>
+    <published>2023-11-24T13:38:22.000Z</published>
+    <updated>2024-12-24T12:27:43.000Z</updated>
+    
+    
+    <summary type="html">有东西被加密了, 请输入神秘字符串查看.</summary>
+    
+    
+    
+    <category term="白色魔法" scheme="https://blog.ver.moe/categories/%E7%99%BD%E8%89%B2%E9%AD%94%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+</feed>
